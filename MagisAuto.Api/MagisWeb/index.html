@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAGIS-AUTO | Crédito Financiero Automotriz</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D2750'/%3E%3Cpath d='M8 17l2-5a2 2 0 0 1 1.9-1.3h8.2A2 2 0 0 1 22 12l2 5M7 17h18v4H7zM10 21v2M22 21v2' stroke='%235AA9FF' stroke-width='2' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/estilos.css?v=2">
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-inicio" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5" /><path d="M5 9.5V21h5v-6h4v6h5V9.5" /></symbol>
+            <symbol id="i-operacion" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" /></symbol>
+            <symbol id="i-cliente" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" /></symbol>
+            <symbol id="i-fiadores" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" /><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.3c2.1.7 3.5 2.8 3.5 5.7" /></symbol>
+            <symbol id="i-auto" viewBox="0 0 24 24"><path d="M5 11l1.6-4.3A2 2 0 0 1 8.5 5.4h7a2 2 0 0 1 1.9 1.3L19 11" /><rect x="3" y="11" width="18" height="6" rx="2" /><path d="M6 17v2.5M18 17v2.5" /><circle cx="7.5" cy="14" r=".6" /><circle cx="16.5" cy="14" r=".6" /></symbol>
+            <symbol id="i-monedas" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" /><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" /></symbol>
+            <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4M7.5 14h2M11 14h2M14.5 14h2M7.5 17.5h2M11 17.5h2" /></symbol>
+            <symbol id="i-buscar" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></symbol>
+            <symbol id="i-barras" viewBox="0 0 24 24"><path d="M5 20v-7M10 20V6M15 20v-9M20 20V4" stroke-width="3" /></symbol>
+            <symbol id="i-libro" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3" /><path d="M9 3v18" /></symbol>
+            <symbol id="i-abajo" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+            <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z" /><path d="m9 12 2 2 4-4" /></symbol>
+            <symbol id="i-campana" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" /><path d="M10 20a2 2 0 0 0 4 0" /></symbol>
+            <symbol id="i-cuadros" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5" fill="currentColor" /><rect x="13" y="3" width="8" height="8" rx="1.5" fill="currentColor" /><rect x="3" y="13" width="8" height="8" rx="1.5" fill="currentColor" /><rect x="13" y="13" width="8" height="8" rx="1.5" fill="currentColor" /></symbol>
+            <symbol id="i-nube" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.6 1.5A3.8 3.8 0 0 1 17.5 18" /><path d="M12 12v8M8.5 15.5 12 12l3.5 3.5" /></symbol>
+            <symbol id="i-mas" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+            <symbol id="i-efectivo" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" /><circle cx="12" cy="12" r="3" /><path d="M6.5 9.5h.01M17.5 14.5h.01" /></symbol>
+            <symbol id="i-porcentaje" viewBox="0 0 24 24"><path d="M19 5 5 19" /><circle cx="7" cy="7" r="2.5" /><circle cx="17" cy="17" r="2.5" /></symbol>
+            <symbol id="i-recaudo" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M14.6 9.6c-.5-.9-1.5-1.6-2.6-1.6-1.4 0-2.5.8-2.5 2s1.1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1.1 0-2.1-.7-2.6-1.6M12 6.5V8M12 16v1.5" /></symbol>
+            <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+            <symbol id="i-tendencia" viewBox="0 0 24 24"><path d="M3 20h18" /><path d="m4 16 5-5 4 3 7-7" /></symbol>
+            <symbol id="i-hoja" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5" /></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></symbol>
+        </defs>
+    </svg>
+
+    <aside class="lateral" id="lateral">
+        <div class="marca-fila">
+            <a class="marca" href="#/inicio">
+                <svg class="marca-auto" viewBox="0 0 64 40" aria-hidden="true">
+                    <path d="M10 22l5-11a5 5 0 0 1 4.6-3h22.8a5 5 0 0 1 4.6 3l5 11" />
+                    <path d="M6 22h52a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2z" />
+                    <path d="M12 32v4M52 32v4M22 8l-3 14M28 15h8" />
+                    <circle cx="13" cy="27" r="1.6" />
+                    <circle cx="51" cy="27" r="1.6" />
+                </svg>
+                <span>
+                    <span class="marca-nombre">MAGIS-AUTO</span>
+                    <span class="marca-sub">Crédito Financiero Automotriz</span>
+                </span>
+            </a>
+            <button type="button" class="menu-movil" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <svg class="ic"><use href="#i-menu" /></svg>
+            </button>
+        </div>
+
+        <nav class="menu" id="menu" aria-label="Secciones">
+            <a href="#/inicio"><svg class="ic"><use href="#i-inicio" /></svg><span>Inicio</span></a>
+
+            <div class="grupo" data-grupo="operacion">
+                <button type="button" class="grupo-btn" aria-expanded="true" aria-controls="g-operacion">
+                    <svg class="ic"><use href="#i-operacion" /></svg><span>Operación</span><svg class="chev"><use href="#i-abajo" /></svg>
+                </button>
+                <div class="grupo-items" id="g-operacion">
+                    <a href="#/clientes"><svg class="ic"><use href="#i-cliente" /></svg><span>Clientes</span></a>
+                    <a href="#/fiadores"><svg class="ic"><use href="#i-fiadores" /></svg><span>Fiadores</span></a>
+                    <a href="#/vehiculos"><svg class="ic"><use href="#i-auto" /></svg><span>Vehículos en garantía</span></a>
+                    <a href="#/creditos"><svg class="ic"><use href="#i-monedas" /></svg><span>Créditos</span></a>
+
+                    <div class="grupo sub" data-grupo="pagos">
+                        <button type="button" class="grupo-btn" aria-expanded="false" aria-controls="g-pagos">
+                            <svg class="ic"><use href="#i-calendario" /></svg><span>Pagos</span><svg class="chev"><use href="#i-abajo" /></svg>
+                        </button>
+                        <div class="grupo-items" id="g-pagos" hidden>
+                            <a href="#/pagos"><span>Registrar pago</span></a>
+                            <a href="#/reportes/18"><span>Cierre de caja</span></a>
+                            <a href="#/reportes/23"><span>Pagos anulados</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="menu-linea">
+
+            <a href="#/consultas"><svg class="ic"><use href="#i-buscar" /></svg><span>Consultas</span></a>
+            <a href="#/reportes"><svg class="ic"><use href="#i-barras" /></svg><span>Reportes financieros</span></a>
+
+            <div class="grupo sub" data-grupo="catalogos">
+                <button type="button" class="grupo-btn" aria-expanded="false" aria-controls="g-catalogos">
+                    <svg class="ic"><use href="#i-libro" /></svg><span>Catálogos</span><svg class="chev"><use href="#i-abajo" /></svg>
+                </button>
+                <div class="grupo-items" id="g-catalogos" hidden></div>
+            </div>
+        </nav>
+
+        <svg class="onda" viewBox="0 0 300 160" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 70 C 90 20, 190 30, 300 0 L300 160 L0 160 Z" />
+        </svg>
+
+        <a class="pie-lateral" href="/swagger" target="_blank" rel="noopener">
+            <svg class="ic"><use href="#i-escudo" /></svg>
+            <span><span>Documentación de la API</span><small>v1.0.0</small></span>
+        </a>
+    </aside>
+
+    <div class="contenido">
+        <div class="barra-sup">
+            <a class="campana" id="campana" href="#/reportes/2" aria-label="Alertas de cobro">
+                <svg class="ic"><use href="#i-campana" /></svg>
+                <span class="punto" hidden></span>
+            </a>
+            <details class="usuario">
+                <summary>
+                    <span class="avatar"><svg class="ic"><use href="#i-cliente" /></svg></span>
+                    <span class="usuario-txt"><strong>Administrador</strong><small>Sistema MAGIS-AUTO</small></span>
+                    <svg class="chev"><use href="#i-abajo" /></svg>
+                </summary>
+                <div class="menu-usuario">
+                    <a href="#/catalogos/parametros">Parámetros del sistema</a>
+                    <a href="/swagger" target="_blank" rel="noopener">Documentación de la API</a>
+                </div>
+            </details>
+        </div>
+        <main id="vista" tabindex="-1"></main>
+    </div>
+
+    <div id="avisos" aria-live="polite"></div>
+    <div id="impresion"></div>
+
+    <datalist id="lista-parentescos">
+        <option value="Madre"></option>
+        <option value="Padre"></option>
+        <option value="Hermano(a)"></option>
+        <option value="Esposo(a)"></option>
+        <option value="Tío(a)"></option>
+        <option value="Primo(a)"></option>
+        <option value="Amigo(a)"></option>
+        <option value="Compañero(a) de trabajo"></option>
+        <option value="Jefe inmediato"></option>
+        <option value="Vecino(a)"></option>
+    </datalist>
+
+    <script src="js/app.js?v=2"></script>
+</body>
+</html>
